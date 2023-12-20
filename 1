@@ -1,0 +1,51 @@
+import random
+
+def printHello():
+    print("Hello World")
+
+# def heloname(name):
+#     print(f"Hello {name}")
+
+def userInfo(name,login,age):
+    #print(f"User name: {name}\nLogin: {login}\nAge: {age}")
+    return f"User name: {name}\nLogin: {login}\nAge: {age}"
+
+# printHello
+# name = input("Enter name: ")
+# heloname(name)
+
+# info = userInfo("x", "x", 100)
+# print(info)
+
+
+# randomnumb = random.randint(1,100)
+# print(randomnumb)
+# listofvalue = ["stone", "scissors", "paper"]
+# choice = random.choice(listofvalue)
+# print(choice)
+
+def printValue(a):
+    global number
+    number1 = 10
+    number = a + 25
+    # print(f"New walue = {a}")
+
+def function():
+    for i in range(10):
+        global number
+
+        for j in range(10):
+            print(f"{i} * {j} = {i*j}")
+
+def factorialofnum(num):
+    if num == 0:
+        return 1
+    else:
+        return num*factorialofnum(num-1)
+print(factorialofnum(5))
+
+
+number = int(input("Enter your number: "))
+printValue(number)
+print(number)
+
